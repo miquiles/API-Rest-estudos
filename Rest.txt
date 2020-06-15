@@ -1,0 +1,54 @@
+
+
+URI - acesso ao metodo restfull
+
+API - Intermediação de sistemas.
+Software consumer(acesso via json) x provedor backend-APi
+ 
+WebService - é um tipo de API.
+
+
+Constraints(){
+
+1- Client - Service independentes;
+
+2- Stateless - sem estado. A aplicação nao deve possuir estado;
+
+3- Cache - dados que nao mudam. Quando necessário Resposta "Cacheada";
+
+4- Interface Uniforme -  
+
+5- Sistema em camadas - 
+
+6- código sob demanda - opcional;
+  
+} 
+
+Protocolo (Verbo) HTTP : 
+
+GET - Pedido para recuperar dados Anotação Spring @GetMapping
+Post - Salvar e enviar dados para processar Anotação Spring @PostMapping
+Put - Envia dados para atualizar @PutMapping
+Delete - Deleta registro anotação Spring @DeleteMapping
+
+-----------------------------
+[verbo] [uri] HTTP/[Versao]
+[cabeçalhos]
+
+[corpo/payload]
+
+
+-----------------------------
+
+HTTP/1.1 201 Created
+Location: /produtos/331
+Content-type: application/json
+
+{
+	"codigo" : 331,
+	"nome": "Notebook i7",
+	"preco": 2100.0
+}
+
+
+-----------------------------
