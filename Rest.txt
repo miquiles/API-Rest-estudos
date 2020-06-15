@@ -1,7 +1,4 @@
 
-
-URI - acesso ao metodo restfull
-
 API - Intermediação de sistemas.
 Software consumer(acesso via json) x provedor backend-APi
  
@@ -32,6 +29,7 @@ Put - Envia dados para atualizar @PutMapping
 Delete - Deleta registro anotação Spring @DeleteMapping
 
 -----------------------------
+
 [verbo] [uri] HTTP/[Versao]
 [cabeçalhos]
 
@@ -52,3 +50,23 @@ Content-type: application/json
 
 
 -----------------------------
+
+Singleton Resource - Um único produto é um recurso;
+Collection Resource - Coleção de produtos é um recurso;
+
+URI - acesso ao metodo restfull - Localizador de recursos
+unirforme;
+
+
+/produtos/{codigo}
+
+https://api.sistema/produtos/331
+
+
+-----------------------------
+
+
+
+
+
+
